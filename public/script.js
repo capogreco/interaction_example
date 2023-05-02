@@ -10,14 +10,18 @@ const TAU = Math.PI * 2
 // get canvas element & assign to 'cnv'
 const cnv = document.getElementById ("cnv_id")
 
+// define function for resizing canvas
 function resize_canvas () {
-   // resize to = viewport
+
+   // resize canvas to = viewport
    cnv.width = innerWidth
    cnv.height = innerHeight
 }
 
+// assign to .onresize property of window
 window.onresize = resize_canvas
 
+// initialise canvas size
 resize_canvas ()
 
 // get canvas context & assign to 'ctx'
