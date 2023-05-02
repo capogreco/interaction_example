@@ -1,2 +1,2 @@
-# blank_net_art
-a blank net art template to work with deno deploy.
+# interaction example
+an example of how to do pointer interaction using vanilla javascript.
