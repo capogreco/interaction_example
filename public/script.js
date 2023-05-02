@@ -10,9 +10,15 @@ const TAU = Math.PI * 2
 // get canvas element & assign to 'cnv'
 const cnv = document.getElementById ("cnv_id")
 
-// resize to = viewport
-cnv.width = innerWidth
-cnv.height = innerHeight
+function resize_canvas () {
+   // resize to = viewport
+   cnv.width = innerWidth
+   cnv.height = innerHeight
+}
+
+window.onresize = resize_canvas
+
+resize_canvas ()
 
 // get canvas context & assign to 'ctx'
 const ctx = cnv.getContext (`2d`)
